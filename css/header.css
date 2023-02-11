@@ -1,6 +1,25 @@
-.header__title {
-    font-size: 4rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.header {
+    margin: 5px;
+    background-image: linear-gradient(rgba(7, 65, 172, 0.5), rgba(0, 123, 151, 0.5)), url(../img/title.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    color: azure;
+}
+
+.top-text {
+    margin-top: 100px;
+    color: darkkhaki;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header__title {
+    text-transform: uppercase;
+    color: blanchedalmond;
 }

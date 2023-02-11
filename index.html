@@ -7,46 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pickup trucks modification</title>
     <link rel="shortcut icon" href="img/title-icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <div class="header__menu">
-                <a href="#" class="header__menu-item">History</a>
-                <a href="#" class="header__menu-item">Galery</a>
-                <a href="#" class="header__menu-item">Contacts</a>
+    <header id="home" class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" href="#history">History</a>
+                        <a class="nav-link" href="#galery">Galery</a>
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </div>
+                </div>
             </div>
         </nav>
-        <h1 class="header__title">Pickup trucks modification111</h1>
-        <img src="img/title.jpg" alt="title">
-        <p>make your car happy</p>
+        <h1 class="header__title top-text">Pickup trucks modification</h1>
+        <p class="top-text">make your car happy</p>
     </header>
     <main>
-        <section class="history">
+        <section id="history" class="history">
             <h2 class="history__title">History</h2>
-            <div class="history__carousel carousel">
-                <article class="carousel__F150">
+            <div class="history__list">
+                <article class="history__F150">
                     <h3>Ford F-150</h3>
-                    <img  src="img/f150.jpg" alt="Ford">
+                    <img src="img/f150.jpg" alt="Ford">
                     <p>The Ford F-Series is a series of light-duty trucks marketed and manufactured by Ford since the
                         1948 model year. Slotted above the Ford Ranger in the Ford truck model range, the F-Series is
                         marketed as a range of full-sized pickup trucks. Since 1977, the F-Series has remained the
                         best-selling pickup truck line in the United States; it has been the highest-selling vehicle
                         overall since 1981.</p>
                 </article>
-                <article class="carousel__Tundra">
+                <article class="history__Tundra">
                     <h3>Toyota Tundra</h3>
-                    <img  src="img/tundra.jpg" alt="Tundra">
+                    <img src="img/tundra.jpg" alt="Tundra">
                     <p>The Toyota Tundra is a pickup truck manufactured in the United States by the Japanese
                         manufacturer Toyota since May 1999. The Tundra was the second full-size pickup to be built by a
                         Japanese manufacturer (the first was the Toyota T100), but the Tundra was the first full-size
                         pickup from a Japanese manufacturer to be built in North America.</p>
                 </article>
-                <article class="carousel__Ram">
+                <article class="history__Ram">
                     <h3>Ram 1500</h3>
-                    <img  src="img/ram.jpg" alt="Ram">
+                    <img src="img/ram.jpg" alt="Ram">
                     <p>The Ram pickup (marketed as the Dodge Ram until 2010) is a full-size pickup truck manufactured by
                         Stellantis North America (formerly Chrysler Group LLC and FCA US LLC) and marketed from 2010
                         onwards under the Ram Trucks brand. Previously, Ram was part of the Dodge line of light trucks.
@@ -57,28 +68,71 @@
             </div>
 
         </section>
-        <section class="galery">
+        <section id="galery" class="galery">
             <h2 class="galery__title">Galery</h2>
             <h3 class="galery__subtitle">Some our projects</h3>
-            <div class="galery__carousel carousel">
-                <img  src="img/f150mods.jpg" alt="Ford">
-                <img  src="img/f150-baja.webp" alt="Ford">
-                <img  src="img/f150-mods-camp.webp" alt="Ford">
-                <img  src="img/f150-raptor-mods.jpg" alt="Ford">
-                <img  src="img/f150-raptor.jpg" alt="Ford">
-                <img  src="img/f150camp.jpg" alt="Ford">
-                <img  src="img/f150galery.jpg" alt="Ford">
-                <img  src="img/ram-2500.jpg" alt="Ram">
-                <img  src="img/ram-camp.jpg" alt="Ram">
-                <img  src="img/ram-galery.webp" alt="Ram">
-                <img  src="img/ram-mods.jpg" alt="Ram">
-                <img  src="img/tundra-mods.jpg" alt="Tundra">
-                <img  src="img/tundra-galery.jpg" alt="Tundra">
-                <img  src="img/tundra-camp.jpg" alt="Tundra">
-                <img  src="img/tundra-rocks.jpg" alt="Tundra">
+            <div id="carousel-galery" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/f150mods.jpg" class="d-block w-100 mx-auto" alt="Ford">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/f150-baja.webp" class="d-block w-100 mx-auto" alt="Ford">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/f150-mods-camp.webp" class="d-block w-100 mx-auto" alt="Ford">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/f150-raptor-mods.jpg" class="d-block w-100 mx-auto" alt="Ford">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/f150-raptor.jpg" class="d-block w-100 mx-auto" alt="Ford">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/f150camp.jpg" class="d-block w-100 mx-auto" alt="Ford">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/f150galery.jpg" class="d-block w-100 mx-auto" alt="Ford">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ram-2500.jpg" class="d-block w-100 mx-auto" alt="Ram">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ram-camp.jpg" class="d-block w-100 mx-auto" alt="Ram">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ram-galery.webp" class="d-block w-100 mx-auto" alt="Ram">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ram-mods.jpg" class="d-block w-100 mx-auto" alt="Ram">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/tundra-mods.jpg" class="d-block w-100 mx-auto" alt="Tundra">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/tundra-galery.jpg" class="d-block w-100 mx-auto" alt="Tundra">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/tundra-camp.jpg" class="d-block w-100 mx-auto" alt="Tundra">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/tundra-rocks.jpg" class="d-block w-100 mx-auto" alt="Tundra">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-galery"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-galery"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
-        <section class="contacts">
+        <section id="contacts" class="contacts">
             <div class="contacts__details">
                 <h2 class="contacts__title">Contacts</h2>
                 <h3 class="contacts__subtitle">If you want to upgrade your car, feel free to contact us.</h3>
@@ -105,9 +159,12 @@
         </section>
     </main>
     <footer>
-        <a href="#" class="footer">To the top</a>
-        <img  src="img/social-icons.png" alt="social">
+        <p>© Created by Serhii Bodnar</p>
+        <p>All rights Reserved</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
