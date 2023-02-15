@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-
 }
 
 .history__title {
@@ -11,6 +10,11 @@
     text-transform: uppercase;
     font-weight: 800;
     font-size: 30px;
+}
+
+.history p,
+h3 {
+    font-family: 'Julee', cursive
 }
 
 .galery h2,
@@ -36,6 +40,7 @@ h3 {
     column-gap: 10px;
     display: grid;
     grid-template-columns: 1fr;
+    text-align: center;
 }
 
 .contacts__title {
@@ -50,7 +55,8 @@ h3 {
     margin: 5px;
     display: grid;
     grid-template-columns: 1fr;
-
+    width: 300px;
+    justify-self: center;
 }
 
 .contacts p {
@@ -77,6 +83,8 @@ h3 {
     }
 
     .contacts {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        text-align: center;
     }
 }

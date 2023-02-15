@@ -1,5 +1,4 @@
 .header {
-    margin: 5px;
     background-image: linear-gradient(rgba(7, 65, 172, 0.5), rgba(0, 123, 151, 0.5)), url(../img/title.jpg);
     background-size: cover;
     background-position: 50%;
@@ -22,4 +21,5 @@
     font-size: 40px;
     text-transform: uppercase;
     color: var(--title-color);
+    font-family: 'Tourney', cursive;
 }
