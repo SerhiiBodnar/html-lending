@@ -57,6 +57,7 @@ h3 {
     grid-template-columns: 1fr;
     width: 300px;
     justify-self: center;
+    opacity: 50%;
 }
 
 .contacts p {
@@ -87,4 +88,17 @@ h3 {
         align-items: center;
         text-align: center;
     }
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel__slides {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
