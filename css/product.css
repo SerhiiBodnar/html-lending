@@ -17,6 +17,10 @@ h3 {
     font-family: 'Julee', cursive
 }
 
+.history p {
+    font-size: 20px;
+}
+
 .galery h2,
 h3 {
     display: flex;

@@ -22,10 +22,16 @@ img {
     --subtitle-color: darkkhaki;
     --title-color: blanchedalmond;
     --background-color: antiquewhite;
+    --background-shadow: rgba(156, 165, 180, 0.35);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+body {
+    background-image: linear-gradient(var(--background-shadow),var(--background-shadow)), url(../img/raptor-supercrew.jpg);
+    background-attachment: fixed;
 }

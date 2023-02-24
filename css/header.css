@@ -1,5 +1,5 @@
 .header {
-    background-image: linear-gradient(rgba(7, 65, 172, 0.5), rgba(0, 123, 151, 0.5)), url(../img/title.jpg);
+    background-image: linear-gradient(var(--background-shadow),var(--background-shadow)), url(../img/title.jpg);
     background-size: cover;
     background-position: 50%;
 }
