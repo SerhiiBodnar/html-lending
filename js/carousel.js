@@ -50,4 +50,6 @@
 
     window.addEventListener('resize', () => renderSlides(slides));
 
+    setInterval(nextSlide,5000);
+
 })();
