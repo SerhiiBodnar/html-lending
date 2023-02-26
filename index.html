@@ -94,13 +94,14 @@
                     <p>truckmodification@email.com</p>
                 </div>
             </div>
-            <form action="#" method="post" class="contacts__form">
+            <form id="contacts__form" action="api/contact" method="POST" class="contacts__form">
                 <input type="text" name="full-name" placeholder="Enter your full name" required>
                 <input type="text" name="model" placeholder="Enter type of your truck" required>
                 <input type="email" name="email" placeholder="Enter your email address" required>
                 <textarea name="message" cols="30" rows="10" placeholder="Your wishes about your truck"></textarea>
                 <input type="submit" value="Send">
             </form>
+            <p id="contacts-form-status"></p>
         </section>
     </main>
     <footer>
@@ -115,6 +116,7 @@
     <script src="js/carousel.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/wishes.js"></script>
+    <script src="js/contacts-form.js"></script>
 </body>
 
 </html>
