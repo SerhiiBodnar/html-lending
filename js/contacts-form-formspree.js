@@ -1,17 +1,14 @@
 (function () {
-    const form = document.getElementById("contacts__form");
+    const form = document.querySelector("#contacts__form");
+    form.addEventListener("submit", handleSubmit);
   
-    async function handleSubmit(event) {
+    function handleSubmit(event) {
       event.preventDefault();
       const status = document.getElementById("contact-form-status");
       fetch(event.target.action, {
         method: form.method,
-        body: JSON.stringify({
-            email: document.querySelector('#contacts__form > input[type=email]:nth-child(3)').value,
-            message: document.querySelector('#contacts__form > input[type=text]:nth-child(5)').value
-        }),
+        body: new FormData(event.target),
         headers: {
-          "Content-type": "application/json",
           Accept: "application/json",
         },
       })
@@ -36,5 +33,5 @@
           status.innerHTML = "Oops! There was a problem submitting your form";
         });
     }
-    form.addEventListener("submit", handleSubmit);
+  
   })();
